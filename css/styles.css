@@ -1,11 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+* {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --accent-colour1: #c3073f;
+    --accent-colour2: #c88089;
+}
+
 body {
-    background-color: turquoise;
+    background-color: black;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: lightgreen;
+    background-color: black;
     padding: 20px;
     display: flex;
     justify-content: flex-end; /* Align items to the right */
@@ -24,16 +36,58 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--accent-colour2);
+    font-size: 0.85rem;
 }
 
-.home-content {
-    background-color: red;
+.home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: turquoise;
 }
 
+.greeting {
+    color: var(--accent-colour1);
+}
+
+.name {
+    color: red;
+}
+
+.catch-phrase {
+    color: #cc4d5f;
+}
+
+.about-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: turquoise;
+}
+
+/*
 .about-content {
     background-color: orange;
 }
+*/
+
+.work-section {
+    /*height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: turquoise;
+}
+
 
 .work-content {
     background-color: yellow;
