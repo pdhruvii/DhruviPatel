@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: green;
+    background-color: lightgreen;
     padding: 20px;
     display: flex;
     justify-content: flex-end; /* Align items to the right */
@@ -57,6 +57,18 @@ nav a {
 
 .workExp1 .company {
     color: teal;
+}
+
+.workExp2 .company {
+    color: plum;
+}
+
+.workExp3 .company {
+    color: salmon;
+}
+
+.workExp4 .company {
+    color: seagreen;
 }
 
 /*To make the header stack vertically for smaller screen sizes*/
