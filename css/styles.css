@@ -1,5 +1,5 @@
 body {
-    background-color: yellow;
+    background-color: turquoise;
     margin: 0;
     padding: 0;
 }
@@ -25,4 +25,50 @@ nav li {
 nav a {
     text-decoration: none;
     color: white;
+}
+
+.home-content {
+    background-color: red;
+}
+
+.about-content {
+    background-color: orange;
+}
+
+.work-content {
+    background-color: yellow;
+}
+
+.projects-content {
+    background-color: green;
+}
+
+.extracurriculars-content {
+    background-color: blue;
+}
+
+.contact-content {
+    background-color: purple;
+}
+
+.resume-content {
+    background-color: magenta;
+}
+
+.workExp1 .company {
+    color: teal;
+}
+
+/*To make the header stack vertically for smaller screen sizes*/
+@media (max-width: 500px) {
+    header {
+        flex-direction: column; 
+        align-items: flex-end; 
+    }
+
+    nav li {
+        display: block; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
 }
