@@ -129,7 +129,7 @@ nav a.active {
 
 .name {
     background-color: white;
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     line-height: 0;
 }
 
@@ -159,6 +159,10 @@ nav a.active {
         padding-left: 9rem;
     }
 
+    .greeting {
+        font-size: 65%;
+    }
+
     .name {
         font-size: 3.3rem;
     }
@@ -175,6 +179,10 @@ nav a.active {
         padding-left: 8rem;
     }
 
+    .greeting {
+        font-size: 60%;
+    }
+
     .name {
         font-size: 3rem; 
     }
@@ -187,6 +195,10 @@ nav a.active {
 @media only screen and (max-width: 1100px) {
     .home-section {
         padding-left: 7rem;
+    }
+
+    .greeting {
+        font-size: 55%;
     }
 
     .name {
@@ -204,6 +216,10 @@ nav a.active {
         padding-left: 6rem;
     }
 
+    .greeting {
+        font-size: 50%;
+    }
+
     .name {
         font-size: 2.3rem; 
     }
@@ -213,10 +229,14 @@ nav a.active {
     }
 }
 
-/*
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 750px) {
     .home-section {
         padding-left: 5rem;
+    }
+
+    .greeting {
+        font-size: 45%;
     }
 
     .name {
@@ -227,19 +247,40 @@ nav a.active {
         font-size: 1.7rem;
     }
 }
-*/
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
     .home-section {
-        padding-left: 5rem;
+        padding-left: 4rem;
+    }
+
+    .greeting {
+        font-size: 40%;
     }
 
     .name {
-        font-size: 2rem; 
+        font-size: 1.6rem; 
     }
 
     .catch-phrase {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .home-section {
+        padding-left: 3rem;
+    }
+
+    .greeting {
+        font-size: 35%;
+    }
+
+    .name {
+        font-size: 1.3rem; 
+    }
+
+    .catch-phrase {
+        font-size: 1rem;
     }
 }
 
