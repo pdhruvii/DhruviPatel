@@ -34,4 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-  
+// Get the current window width
+var windowWidth = window.innerWidth;
+
+// Log the window width to the console
+console.log("Window width: " + windowWidth + " pixels");

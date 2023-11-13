@@ -29,6 +29,36 @@ body {
     z-index: 100;
 }
 
+@media only screen and (max-width: 768px) {
+    .header-class {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav {
+        padding-right: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0; /* Adjust as needed */
+    }
+}
+
+/*To make the header stack vertically for smaller screen sizes*/
+@media (max-width: 300px) {
+    header {
+        flex-direction: column; 
+        align-items: flex-end; 
+    }
+
+    nav li {
+        display: block; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+}
+
 nav {
     padding-right: 100px;
 }
@@ -116,13 +146,103 @@ nav a.active {
     }
 }
 
-
 .catch-phrase {
     color: #cc4d5f;
     /*background-color: white;*/
     font-size: 3.5rem;
     line-height: 0.6;
 }
+
+
+@media only screen and (max-width: 1450px) {
+    .home-section {
+        padding-left: 9rem;
+    }
+
+    .name {
+        font-size: 3.3rem;
+    }
+
+
+    .catch-phrase {
+        font-size: 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .home-section {
+        padding-left: 8rem;
+    }
+
+    .name {
+        font-size: 3rem; 
+    }
+
+    .catch-phrase {
+        font-size: 2.7rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .home-section {
+        padding-left: 7rem;
+    }
+
+    .name {
+        font-size: 2.6rem; 
+    }
+
+    .catch-phrase {
+        font-size: 2.3rem;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    .home-section {
+        padding-left: 6rem;
+    }
+
+    .name {
+        font-size: 2.3rem; 
+    }
+
+    .catch-phrase {
+        font-size: 2rem;
+    }
+}
+
+/*
+@media only screen and (max-width: 700px) {
+    .home-section {
+        padding-left: 5rem;
+    }
+
+    .name {
+        font-size: 2rem; 
+    }
+
+    .catch-phrase {
+        font-size: 1.7rem;
+    }
+}
+*/
+
+@media only screen and (max-width: 750px) {
+    .home-section {
+        padding-left: 5rem;
+    }
+
+    .name {
+        font-size: 2rem; 
+    }
+
+    .catch-phrase {
+        font-size: 1.7rem;
+    }
+}
+
 
 .automated-text {
     caret-color:#c3073f;
@@ -259,16 +379,3 @@ nav a.active {
     color: seagreen;
 }
 
-/*To make the header stack vertically for smaller screen sizes*/
-@media (max-width: 500px) {
-    header {
-        flex-direction: column; 
-        align-items: flex-end; 
-    }
-
-    nav li {
-        display: block; 
-        margin-right: 0; 
-        margin-bottom: 20px; 
-    }
-}
