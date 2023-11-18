@@ -495,6 +495,7 @@ nav a.active {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
+    box-shadow: 0 0 12px var(--accent-colour1), 0 0 12px var(--accent-colour1), 0 0 12px var(--accent-colour1);
   }
   
   /* Container around content */
@@ -509,14 +510,17 @@ nav a.active {
   .container::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -13px;
+    width: 18px;
+    height: 18px;
+    right: -9px;
     background-color: var(--accent-colour1);
     border: 2px solid var(--accent-colour1);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
+    box-shadow: 0 0 12px var(--accent-colour1), 0 0 12px var(--accent-colour1), 0 0 12px var(--accent-colour1);
+    /*filter: blur(1px); */
+
   }
   
   /* Place the container to the left */
@@ -541,6 +545,8 @@ nav a.active {
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent var(--accent-colour1);
+    /*text-shadow: 0 0 5px #FF6077, 0 0 4px #FF6077, 0 0 3px #FF6077;*/
+
   }
   
   /* Add arrows to the right container (pointing left) */
@@ -555,11 +561,13 @@ nav a.active {
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--accent-colour1) transparent transparent;
+    /*text-shadow: 0 0 5px #FF6077, 0 0 4px #FF6077, 0 0 3px #FF6077;*/
+
   }
   
   /* Fix the circle for containers on the right side */
   .right::after {
-    left: -16px;
+    left: -13px;
   }
   
   /* The actual content */
@@ -571,7 +579,20 @@ nav a.active {
     border: 1.75px solid var(--accent-colour1);
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 0 10px var(--accent-colour1), 0 0 10px var(--accent-colour1), 0 0 10px var(--accent-colour1);
   }
+
+  /*
+  .content {
+    padding: 20px 30px;
+    background-color: black;
+    color: #c3073f;
+    position: relative;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 0 10px #c3073f, 0 0 10px #c3073f, 0 0 10px #c3073f;
+    }
+  */
 
   .content:hover {
     background-color: var(--accent-colour2);
