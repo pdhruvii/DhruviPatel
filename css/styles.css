@@ -449,7 +449,9 @@ nav a.active {
 
 
 .work-section {
-    height: 100vh;
+    position: relative;
+    /*height: 100vh;
+    margin-bottom: 50px;*/
     /*background-color: turquoise;*/
 }
 
@@ -479,7 +481,7 @@ nav a.active {
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
-    max-width: 1200px;
+    max-width: 70%;
     margin: 30px auto 0;
   }
   
@@ -573,12 +575,18 @@ nav a.active {
 
   .content:hover {
     background-color: var(--accent-colour2);
-    color: white;
+    /*color: white;*/
     transition: 0.45s ease;
     box-shadow: 0 0 0.65rem var(--accent-colour3);
   }
 
-
+  .content:hover h1,
+  .content:hover h2,
+  .content:hover h3,
+  .content:hover ul li {
+      color: white;
+      transition: 0.45s ease;
+  }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
@@ -597,9 +605,9 @@ nav a.active {
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid var(--accent-colour1);
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent var(--accent-colour1) transparent transparent;
     }
   
     /* Make sure all circles are at the same spot */
@@ -614,16 +622,37 @@ nav a.active {
 }
 
 .position {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
+    line-height: 0.95;
 }
 
+.position h1 {
+    animation: position 3s ease-in-out infinite alternate;
+    color: black;
+}
+
+@keyframes position {
+    from {
+        text-shadow: 0 0 3px #FF6077, 0 0 2.5px #FF6077, 0 0 2px #FF6077, 0 0 1.5px #FF6077, 0 0 1px #FF6077, 0 0 2px #FF6077, 0 0 2.5px #FF6077;
+    }
+    to {
+        text-shadow: 0 0 2.5px #FF6077, 0 0 2px #FF6077, 0 0 1.5px #FF6077, 0 0 1px #FF6077, 0 0 2px #FF6077, 0 0 2.5px #FF6077, 0 0 3px #FF6077;
+    }
+}
+
+
 .company {
-    font-size: 1rem;
-    color: var(--accent-colour2);
+    font-size: 1.5rem;
+    color:  #cc4d5f;
+    /*color: var(--accent-colour1);*/
+    /*color: var(--accent-colour3);*/
+    line-height: 1.1;
 }
 
 .dates {
-    font-size: 0.5rem;
-    color: #c88089;
+    font-size: 1rem;
+    line-height: 0.7;
+    
+    color: var(--accent-colour1);
 }
