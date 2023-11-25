@@ -49,6 +49,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+/*
+function openResume() {
+    const pdfPath = './Dhruvi_Patel_Resume.pdf';
+
+    window.open(pdfPath, '_blank');
+}
+*/
 
 // Get the current window width
 var windowWidth = window.innerWidth;
