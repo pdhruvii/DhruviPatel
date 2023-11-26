@@ -57,6 +57,8 @@ function openResume() {
 }
 */
 
+
+
 // Get the current window width
 var windowWidth = window.innerWidth;
 
