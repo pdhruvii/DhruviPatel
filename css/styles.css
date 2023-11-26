@@ -440,6 +440,7 @@ nav a.active {
 }
 */
 
+/*
 .extracurriculars-section {
     height: 100vh;
     display: flex;
@@ -449,6 +450,7 @@ nav a.active {
     text-align: center;
     background-color: turquoise;
 }
+*/
 
 /*
 .extracurriculars-content {
@@ -531,7 +533,13 @@ nav a.active {
 
 
 .work-section {
+    height: 100vh;
     position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     /*height: 100vh;
     margin-bottom: 50px;*/
     /*background-color: turquoise;*/
@@ -562,7 +570,7 @@ nav a.active {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 40%; /*controls size of the box*/
+    width: 35%; /*controls size of the box*/
   }
   
   /* The circles on the timeline */
@@ -584,7 +592,7 @@ nav a.active {
   
   /* Place the container to the left */
   .left {
-    left: 10%;
+    left: 15%;
   }
   
   /* Place the container to the right */
@@ -631,13 +639,14 @@ nav a.active {
   
   /* The actual content */
   .content {
-    padding: 20px 30px;
+    padding: 10px 10px;
     position: relative;
     border: 1.75px solid var(--accent-colour1);
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     box-shadow: 0 0 0.8rem var(--accent-colour1);
-    background-color: teal;
+    /*background-color: teal;*/
+    text-align: center;
     /*
     border-radius: 2%;
     box-shadow: 0 0 0.8rem var(--accent-colour1);*/
@@ -702,17 +711,18 @@ nav a.active {
     left: 0%;
     }
 }
-
-.position {
-    font-size: 1.5rem;
-    text-align: center;
-    /*line-height: 0.95;*/
-    background-color: yellow;
-}
+/*
+.work-Exp {
+    background-color: red;
+}*/
 
 .position h1 {
+    font-size: 1.75rem;
+    /*background-color: yellow;*/
     animation: position 3s ease-in-out infinite alternate;
     color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
     
 }
 
@@ -726,19 +736,21 @@ nav a.active {
 }
 
 
-.company {
-    font-size: 1.25rem;
+.company h2 {
+    font-size: 1.5rem;
     color:  #cc4d5f;
-    background-color: green;
+    /*background-color: green;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
     /*color: var(--accent-colour1);*/
     /*color: var(--accent-colour3);*/
-    /*line-height: 1.1;*/
 }
 
-.dates {
+.dates h3 {
     font-size: 1rem;
-    /*line-height: 0.7;*/
     color: var(--accent-colour1);
-    background-color: purple;
+    /*background-color: purple;*/
+    margin-top: 5px;
+    margin-bottom: 2px;
 }
 
