@@ -36,6 +36,7 @@
     --accent-colour2: #E83C5A;
     --accent-colour3: #FF6077;
     --accent-colour4: #c88089;
+    --accent-colour5: #cc4d5f;
 }
 
 body {
@@ -171,7 +172,7 @@ nav a.active {
 }
 
 .catch-phrase {
-    color: #cc4d5f;
+    color: var(--accent-colour5);
     /*background-color: white;*/
     font-size: 3.5rem;
     line-height: 0.6;
@@ -330,6 +331,8 @@ nav a.active {
     color: white;
     transition: 0.45s ease;
     box-shadow: 0 0 0.65rem var(--accent-colour3);
+    /*font-size: 22px;*/
+    padding:  10px 14px;
 }
 
 
@@ -399,7 +402,7 @@ nav a.active {
 }
 
 .about-tag {
-    color: #cc4d5f;
+    color: var(--accent-colour5);
     font-size: 3.5rem;
 }
 
@@ -557,12 +560,12 @@ nav a.active {
     content: '';
     position: absolute;
     width: 2px;
-    background-color: var(--accent-colour1);
+    background-color: var(--accent-colour5);
     top: 0;
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-    box-shadow: 0 0 12px var(--accent-colour1), 0 0 12px var(--accent-colour1), 0 0 12px var(--accent-colour1);
+    box-shadow: 0 0 12px var(--accent-colour5), 0 0 12px var(--accent-colour5), 0 0 12px var(--accent-colour5);
   }
   
   /* Container around content */
@@ -577,15 +580,15 @@ nav a.active {
   .container::after {
     content: '';
     position: absolute;
-    width: 18px;
-    height: 18px;
-    right: -9px;
-    background-color: var(--accent-colour1);
-    border: 2px solid var(--accent-colour1);
+    width: 12px;
+    height: 12px;
+    right: -7px;
+    background-color: var(--accent-colour5);
+    border: 2px solid var(--accent-colour5);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-    box-shadow: 0 0 12px var(--accent-colour1), 0 0 12px var(--accent-colour1), 0 0 12px var(--accent-colour1);
+    box-shadow: 0 0 12px var(--accent-colour5), 0 0 12px var(--accent-colour5), 0 0 12px var(--accent-colour5);
     /*filter: blur(1px); */
 
   }
@@ -634,7 +637,7 @@ nav a.active {
   
   /* Fix the circle for containers on the right side */
   .right::after {
-    left: -13px;
+    left: -10px;
   }
   
   /* The actual content */
@@ -644,7 +647,7 @@ nav a.active {
     border: 1.75px solid var(--accent-colour1);
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    box-shadow: 0 0 0.8rem var(--accent-colour1);
+    /*box-shadow: 0 0 0.8rem var(--accent-colour1);*/   /*glow before hovering*/
     /*background-color: teal;*/
     text-align: center;
     /*
@@ -652,19 +655,8 @@ nav a.active {
     box-shadow: 0 0 0.8rem var(--accent-colour1);*/
   }
 
-  /*
-  .content {
-    padding: 20px 30px;
-    background-color: black;
-    color: #c3073f;
-    position: relative;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    box-shadow: 0 0 10px #c3073f, 0 0 10px #c3073f, 0 0 10px #c3073f;
-    }
-  */
-
   .content:hover {
+    padding: 20px 20px;
     background-color: var(--accent-colour2);
     /*color: white;*/
     transition: 0.45s ease;
@@ -673,7 +665,7 @@ nav a.active {
 
   .content:hover h1,
   .content:hover h2,
-  .content:hover h3,
+  .content:hover p,
   .content:hover ul li {
       color: white;
       transition: 0.45s ease;
@@ -719,13 +711,15 @@ nav a.active {
 .position h1 {
     font-size: 1.75rem;
     /*background-color: yellow;*/
-    animation: position 3s ease-in-out infinite alternate;
-    color: black;
+    /*animation: position 3s ease-in-out infinite alternate;
+    color: black;*/
+    color: var(--accent-colour5);
     margin-top: 5px;
     margin-bottom: 5px;
     
 }
 
+/*
 @keyframes position {
     from {
         text-shadow: 0 0 2px #FF6077, 0 0 1.5px #FF6077, 0 0 1px #FF6077, 0 0 0.5px #FF6077, 0 0 1px #FF6077, 0 0 1.5px #FF6077, 0 0 2.5px #FF6077;
@@ -734,11 +728,12 @@ nav a.active {
         text-shadow: 0 0 1.5px #FF6077, 0 0 1px #FF6077, 0 0 0.5px #FF6077, 0 0 0.5px #FF6077, 0 0 1px #FF6077, 0 0 2px #FF6077, 0 0 3px #FF6077;
     }
 }
+*/
 
 
 .company h2 {
     font-size: 1.5rem;
-    color:  #cc4d5f;
+    color:  var(--accent-colour1);
     /*background-color: green;*/
     margin-top: 5px;
     margin-bottom: 5px;
@@ -746,9 +741,9 @@ nav a.active {
     /*color: var(--accent-colour3);*/
 }
 
-.dates h3 {
-    font-size: 1rem;
-    color: var(--accent-colour1);
+.dates p {
+    font-size: 1.25rem;
+    color: var(--accent-colour4);
     /*background-color: purple;*/
     margin-top: 5px;
     margin-bottom: 2px;
