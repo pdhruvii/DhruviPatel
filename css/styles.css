@@ -360,6 +360,7 @@ nav a.active {
     width: 325px;
     height: 325px;
     border-radius: 2%;
+    border: 1.75px solid var(--accent-colour1);
     box-shadow: 0 0 0.8rem var(--accent-colour1);
     margin-top: 39.5px;
     margin-left: 150px;
@@ -528,12 +529,6 @@ nav a.active {
     background-color: turquoise;
 }
 
-/*
-.resume-content {
-    background-color: magenta;
-}
-*/
-
 
 .work-section {
     position: relative;
@@ -567,7 +562,7 @@ nav a.active {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 40%; /*controls size of the box*/
   }
   
   /* The circles on the timeline */
@@ -589,7 +584,7 @@ nav a.active {
   
   /* Place the container to the left */
   .left {
-    left: 0;
+    left: 10%;
   }
   
   /* Place the container to the right */
@@ -637,13 +632,15 @@ nav a.active {
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: black;
-    color: #c3073f;
     position: relative;
     border: 1.75px solid var(--accent-colour1);
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    box-shadow: 0 0 10px var(--accent-colour1), 0 0 10px var(--accent-colour1), 0 0 10px var(--accent-colour1);
+    box-shadow: 0 0 0.8rem var(--accent-colour1);
+    background-color: teal;
+    /*
+    border-radius: 2%;
+    box-shadow: 0 0 0.8rem var(--accent-colour1);*/
   }
 
   /*
@@ -707,37 +704,41 @@ nav a.active {
 }
 
 .position {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
-    line-height: 0.95;
+    /*line-height: 0.95;*/
+    background-color: yellow;
 }
 
 .position h1 {
     animation: position 3s ease-in-out infinite alternate;
     color: black;
+    
 }
 
 @keyframes position {
     from {
-        text-shadow: 0 0 3px #FF6077, 0 0 2.5px #FF6077, 0 0 2px #FF6077, 0 0 1.5px #FF6077, 0 0 1px #FF6077, 0 0 2px #FF6077, 0 0 2.5px #FF6077;
+        text-shadow: 0 0 2px #FF6077, 0 0 1.5px #FF6077, 0 0 1px #FF6077, 0 0 0.5px #FF6077, 0 0 1px #FF6077, 0 0 1.5px #FF6077, 0 0 2.5px #FF6077;
     }
     to {
-        text-shadow: 0 0 2.5px #FF6077, 0 0 2px #FF6077, 0 0 1.5px #FF6077, 0 0 1px #FF6077, 0 0 2px #FF6077, 0 0 2.5px #FF6077, 0 0 3px #FF6077;
+        text-shadow: 0 0 1.5px #FF6077, 0 0 1px #FF6077, 0 0 0.5px #FF6077, 0 0 0.5px #FF6077, 0 0 1px #FF6077, 0 0 2px #FF6077, 0 0 3px #FF6077;
     }
 }
 
 
 .company {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color:  #cc4d5f;
+    background-color: green;
     /*color: var(--accent-colour1);*/
     /*color: var(--accent-colour3);*/
-    line-height: 1.1;
+    /*line-height: 1.1;*/
 }
 
 .dates {
     font-size: 1rem;
-    line-height: 0.7;
+    /*line-height: 0.7;*/
     color: var(--accent-colour1);
+    background-color: purple;
 }
 
