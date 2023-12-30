@@ -8,3 +8,11 @@
 .projects-section {
     padding-top: 50px;
 }
+
+:root {
+    --accent-colour1: #c3073f;
+    --accent-colour2: #E83C5A;
+    --accent-colour3: #FF6077;
+    --accent-colour4: #c88089;
+    --accent-colour5: #cc4d5f;
+}
