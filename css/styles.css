@@ -48,7 +48,7 @@ body {
 
 .header-class {
     position: fixed;
-    background-color: black;
+    background-color: white;
     padding: 30px;
     display: flex;
     justify-content: flex-end; 
