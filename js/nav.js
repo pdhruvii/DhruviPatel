@@ -24,6 +24,7 @@ window.onscroll = () => {
 //the primaryNav (for smaller sizes only, like the mobile view) when an item is clicked. 
 const primaryNav = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.hamburger');
+const bars = document.querySelectorAll('.bar');
 // const navLinks = document.querySelectorAll('.primary-navigation a');
 const body = document.body;
 
@@ -36,9 +37,17 @@ navToggle.addEventListener('click', () => {
     if (!isVisible) {
       // Disable scrolling when the primary navigation opens
       body.style.overflow = 'hidden';
+       // Change the background color of the bars to pink
+      bars.forEach(bar => {
+        bar.style.backgroundColor = 'var(--accent-colour1)';
+      });
     } else {
       // Enable scrolling when the primary navigation closes
       body.style.overflow = 'auto';
+      // Reset the background color of the bars to the original color
+      bars.forEach(bar => {
+        bar.style.backgroundColor = 'var(--accent-colour4)';
+      });
     }
   }
 });

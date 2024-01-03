@@ -101,6 +101,7 @@ nav a.active {
     display: none;
     cursor: pointer;
     position: fixed;
+    /* background-color: yellow; */
 }
 
 .bar {
@@ -110,12 +111,13 @@ nav a.active {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--accent-colour1);
+    background-color: var(--accent-colour4);
 }
+
 
 @media (max-width: 40em) {
     .primary-navigation {
-        --gap: 1em;
+        --gap: 2em;
         z-index: 1000;
         position: fixed;
         inset: 0 0 0 50%;
