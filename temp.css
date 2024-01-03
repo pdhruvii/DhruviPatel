@@ -237,7 +237,7 @@ nav a.active {
     margin-top: 2.25%;
     height: auto;
     width: 325px;
-    max-width: 50%;
+    max-width: 65%;
     border-radius: 2%;
     border: 1.75px solid var(--accent-colour1);
     box-shadow: 0 0 0.8rem var(--accent-colour1);
@@ -320,25 +320,36 @@ nav a.active {
     .about-textbox-text {
         margin-top: -5%;
     }
+
+    .about-section .about-content img {
+        width: 275px;
+    }
 }
 
 
 .contact-section {
-    background-color: black;
+    /* background-color: black; */
     /* background-color: teal; */
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-content {
-    background-color: lime;
-    position: relative;
-    top: 40%; /* Position the content 50% from the top of the section */
+    /* background-color: lime; */
+    text-align: center;
+    /* position: relative;
+    top: 40%; Position the content 50% from the top of the section
     left: 20%;
-    width: 80%; /* Optional: Set a width for the content */
+    width: 80%; Optional: Set a width for the content */
 }
 
 .contact-textbox-header {
+    /* background-color: yellow; */
     font-size: clamp(14px, 3.3vw, 140px);
+    margin-top: -7.3%;
+    /* height: auto; */
 }
 
 .contact-textbox-header .glow {
@@ -352,10 +363,10 @@ nav a.active {
 
 .contact-textbox-links p {
     /* background-color: pink; */
-    width: 70%;
+    /* width: 70%; */
     color: var(--accent-colour4);
     font-size: clamp(13px, 1.1vw, 45px);
-    margin-top: -5%;
+    margin-top: -6%;
     /* margin-left: 0.5%; */
 }
   
@@ -393,7 +404,7 @@ nav a.active {
     }
 }
 
-/*For iPad Air*/
+/*Contact: For iPad Air*/
 @media (min-width: 768px) and (max-width: 1025px) {
     .contact-textbox-links p {
         font-size: 18px; 
@@ -410,6 +421,7 @@ nav a.active {
         font-size: 12px;
     }
 
+    /*    
     .contact-content {
         left: 12%;
         width: 88%;
@@ -418,6 +430,7 @@ nav a.active {
     .contact-textbox-links p {
         width: 80%;
     }
+    */
 
     .contact-textbox-links p {
         font-size: 13px; 
