@@ -204,7 +204,7 @@ nav a.active {
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     margin: 20px;
     margin-left: 0;
 }
@@ -212,12 +212,9 @@ nav a.active {
 .icon:hover {
     background-color: var(--accent-colour2);
     cursor: pointer;
-    /* display: flex; */
-    /* justify-content: space-between; */
     color: white;
     transition: 0.45s ease;
     box-shadow: 0 0 0.65rem var(--accent-colour3);
-    /*font-size: 22px;*/
     width: 55px; 
     height: 55px;
     line-height: 55px;    
@@ -225,12 +222,63 @@ nav a.active {
 
 
 
-/*
+
 .about-section {
     background-color: teal;
     height: 100vh;
 }
-*/
+
+.about-content {
+    background-color: yellow;
+    position: relative;
+    top: 30%;
+}
+
+.about-textbox {
+    background-color: red;
+    width: 50%;
+    margin-left: 50%;
+}
+
+.about-textbox-header {
+    font-size: clamp(20px, 4vw, 150px);
+    background-color: lightblue;
+}
+
+.about-textbox-header .glow {
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+.about-tag {
+    background-color: pink;
+    color: var(--accent-colour5);
+    margin-top: -8%;
+    font-size: clamp(15px, 3.3vw, 140px);
+}
+
+.about-textbox-text {
+    background-color: lightgreen;
+    width: 96%;
+    font-size: clamp(15px, 1.2vw, 140px);
+    color: var(--accent-colour4);
+    margin-top: -8%;
+}
+
+.darker1:hover{
+    color: var(--accent-colour1);
+    transition: 0.45s ease;
+    font-size: clamp(16px, 1.3vw, 141px);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .contact-section {
@@ -240,7 +288,7 @@ nav a.active {
 }
 
 .contact-content {
-    /* background-color: lime; */
+    background-color: lime;
     position: relative;
     top: 40%; /* Position the content 50% from the top of the section */
     left: 20%;
@@ -278,6 +326,29 @@ nav a.active {
     color: var(--accent-colour1);
     transition: 0.45s ease;
     font-size: clamp(15px, 1.2vw, 50px);
+}
+
+/*Resizing icons for different screen sizes*/
+@media (min-width: 280px) and (max-width: 768px){
+    .icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        /* color: var(--accent-colour1);
+        border: 1.75px solid var(--accent-colour1); */
+        border-radius: 3.5px;
+        /* transition: background-color 0.3s, color 0.3s; */
+        /* text-align: center; */
+        font-size: 15px;
+        margin: 10px;
+        margin-left: 0;
+    }
+
+    .icon:hover{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
 }
 
 /*For iPad Air*/
