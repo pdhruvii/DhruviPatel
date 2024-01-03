@@ -17,13 +17,13 @@ header {
     background-color: black;
 }
 */
-
-nav {
-    /* Z-index to make it the top layer */
+/* Z-index to make it the top layer */
     /* z-index: 10000; */
+
+/* nav {
     position: fixed;
 }
-
+ */
 
 body {
     background-color: black;
@@ -144,15 +144,18 @@ nav a.active {
 .home-section {
     /* background-color: green; */
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-content {
-    background-color:black;
+    width: 92%;
+    /* background-color:red; */
     /* background-color: steelblue; */
-    position: relative;
-    top: 30%; /* Position the content 50% from the top of the section */
-    left: 8%;
-    width: 92%; /* Optional: Set a width for the content */
+    /* position: relative; */
+    /* top: 30%; Position the content 30% from the top of the section */
+    /* margin-left: 8%;  */
   }
 
   .greeting {
@@ -221,28 +224,56 @@ nav a.active {
 }
 
 
-
-
 .about-section {
-    background-color: teal;
+    width: 100%;
     height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .about-content img {
+    margin-top: 2.25%;
+    height: auto;
+    width: 325px;
+    max-width: 50%;
+    border-radius: 2%;
+    border: 1.75px solid var(--accent-colour1);
+    box-shadow: 0 0 0.8rem var(--accent-colour1);
+}
+
+/* 
+.about-section .about-content img:hover {
+    width: 345px;
+    height: auto;
+    border-radius: 2%;
+    box-shadow: 0 0 0.8rem var(--accent-colour1);
+    transition: 0.45s ease;
+} */
+
+.about-textbox {
+    /* background-color: yellow; */
+    width: 70%;
+    max-width: 100%;
+    padding: 0 40px;
 }
 
 .about-content {
-    background-color: yellow;
-    position: relative;
-    top: 30%;
-}
-
-.about-textbox {
-    background-color: red;
-    width: 50%;
-    margin-left: 50%;
+    /* background-color: blue; */
+    width: 80%;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .about-textbox-header {
     font-size: clamp(20px, 4vw, 150px);
-    background-color: lightblue;
+    margin-top: -8%;
+    /* background-color: lightblue; */
 }
 
 .about-textbox-header .glow {
@@ -250,15 +281,15 @@ nav a.active {
 }
 
 .about-tag {
-    background-color: pink;
+    /* background-color: pink; */
     color: var(--accent-colour5);
-    margin-top: -8%;
+    margin-top: -9%;
     font-size: clamp(15px, 3.3vw, 140px);
 }
 
 .about-textbox-text {
-    background-color: lightgreen;
-    width: 96%;
+    /* background-color: lightgreen; */
+    /* width: 96%; */
     font-size: clamp(15px, 1.2vw, 140px);
     color: var(--accent-colour4);
     margin-top: -8%;
@@ -271,14 +302,25 @@ nav a.active {
 }
 
 
+@media (max-width: 1370.5px) {
+    .about-textbox {
+        text-align: left;
+        padding: 0 10px;
+        width: 100%;
+    }
 
+    .about-textbox-header {
+        margin-top: 0;
+    }
+    
+    .about-tag {
+        margin-top: -6%;
+    }
 
-
-
-
-
-
-
+    .about-textbox-text {
+        margin-top: -5%;
+    }
+}
 
 
 .contact-section {
