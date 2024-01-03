@@ -12,18 +12,22 @@
     --accent-colour4: #c88089;
     --accent-colour5: #cc4d5f;
 }
-/*
+
 header {
-    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
-*/
+
 /* Z-index to make it the top layer */
     /* z-index: 10000; */
 
 /* nav {
+    
     position: fixed;
-}
- */
+} */
+
 
 body {
     background-color: black;
@@ -40,6 +44,7 @@ body {
     align-items: center;
     justify-content: right;
     padding: 30px;
+    background-color: black; /*This is the black colour of the navbar*/
 }
 
 nav a {
@@ -75,7 +80,7 @@ nav a.active {
 }
 
 .primary-navigation {
-    z-index: 1000;
+    /* z-index: 1000; */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -116,7 +121,7 @@ nav a.active {
         inset: 0 0 0 50%;
         flex-direction: column;
         padding: min(30vh, 1.5rem) 2em;
-        /* background-color: yellow; */
+        background-color: black;
         /* height: auto;
         max-height: none; */
         /* background-color: hsl(0 0% 100% / 0.01);
@@ -310,7 +315,7 @@ nav a.active {
     }
 
     .about-textbox-header {
-        margin-top: 0;
+        margin-top: -4%;
     }
     
     .about-tag {
@@ -325,7 +330,6 @@ nav a.active {
         width: 275px;
     }
 }
-
 
 .contact-section {
     /* background-color: black; */
@@ -355,11 +359,6 @@ nav a.active {
 .contact-textbox-header .glow {
     animation: glow 3s ease-in-out infinite alternate;
 }
-
-/*
-.contact-textbox {
-    background-color: pink;
-}*/
 
 .contact-textbox-links p {
     /* background-color: pink; */
