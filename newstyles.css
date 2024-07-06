@@ -32,6 +32,7 @@ body {
     /* align-items: center; */
     /* justify-content: center; */
     margin-left: 8%;
+    width: 85%;
 }
 .greeting {
     color: var(--accent-colour1);
@@ -84,7 +85,7 @@ body {
     border-radius: 5px;
     transition: background-color 4.5.3s, color 0.3s;
     font-size: 20px;
-    margin: 6px 6px;
+    margin: 4px 4px;
 }
 
 .socials a:hover {
@@ -92,6 +93,40 @@ body {
     color: white;
     transition: 0.45s ease;
     box-shadow: 0 0 0.65rem var(--accent-colour3);
-    /*font-size: 22px;*/
+    font-size: 22px;
     padding:  10px 14px;
+}
+
+@media (max-width: 360px) {
+    .home-section {
+        margin-left: 3.5%;
+        width: 95%;
+    }
+    .greeting {
+        font-size: 1rem;
+    }
+    .name {
+        font-size: 1.9rem;
+    }
+    
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 1.5px #FF6077, 0 0 1.25px #FF6077, 0 0 1px #FF6077, 0 0 1.25px #FF6077, 0 0 1.5px #FF6077, 0 0 1.25px #FF6077, 0 0 1px #FF6077;
+        }
+        to {
+            text-shadow: 0 0 1.25px #FF6077, 0 0 1px #FF6077, 0 0 1.25px #FF6077, 0 0 1.5px #FF6077, 0 0 1.25px #FF6077, 0 0 1px #FF6077, 0 0 1.25px #FF6077;
+        }
+    }
+    .catch-phrase {
+        font-size: 1.6rem;
+    }
+    .socials a {
+        font-size: 16px;
+        padding: 4px 8px;
+        margin: 1px 1px;
+    }
+    .socials a:hover {
+        font-size: 18px;
+        padding:  8px 12px;
+    }
 }
