@@ -69,3 +69,29 @@ body {
 .automated-text {
     caret-color:#c3073f;
 }
+
+.socials {
+    /* margin-top: 5%; */
+    /* background-color: red; */
+    line-height: 4.2;
+}
+
+.socials a {
+    padding:  6px 10px;
+    /*background-color: transparent;*/
+    color: var(--accent-colour1);
+    border: 1.75px solid var(--accent-colour1);
+    border-radius: 5px;
+    transition: background-color 4.5.3s, color 0.3s;
+    font-size: 20px;
+    margin: 6px 6px;
+}
+
+.socials a:hover {
+    background-color: var(--accent-colour2);
+    color: white;
+    transition: 0.45s ease;
+    box-shadow: 0 0 0.65rem var(--accent-colour3);
+    /*font-size: 22px;*/
+    padding:  10px 14px;
+}
