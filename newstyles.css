@@ -97,7 +97,7 @@ body {
     padding:  10px 14px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
     .home-section {
         margin-left: 3.5%;
         width: 95%;
@@ -119,6 +119,109 @@ body {
     }
     .catch-phrase {
         font-size: 1.6rem;
+    }
+    .socials a {
+        font-size: 16px;
+        padding: 4px 8px;
+        margin: 1px 1px;
+    }
+    .socials a:hover {
+        font-size: 18px;
+        padding:  8px 12px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+    .home-section {
+        margin-left: 3.5%;
+        width: 95%;
+    }
+    .greeting {
+        font-size: 1rem;
+    }
+    .name {
+        font-size: 2.4rem;
+    }
+    
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 1.5px #FF6077, 0 0 1.25px #FF6077, 0 0 1px #FF6077, 0 0 1.25px #FF6077, 0 0 1.5px #FF6077, 0 0 1.25px #FF6077, 0 0 1px #FF6077;
+        }
+        to {
+            text-shadow: 0 0 1.25px #FF6077, 0 0 1px #FF6077, 0 0 1.25px #FF6077, 0 0 1.5px #FF6077, 0 0 1.25px #FF6077, 0 0 1px #FF6077, 0 0 1.25px #FF6077;
+        }
+    }
+    .catch-phrase {
+        font-size: 2.1rem;
+    }
+    .socials a {
+        font-size: 16px;
+        padding: 4px 8px;
+        margin: 1px 1px;
+    }
+    .socials a:hover {
+        font-size: 18px;
+        padding:  8px 12px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .home-section {
+        margin-left: 3.5%;
+        width: 95%;
+    }
+    .greeting {
+        font-size: 1rem;
+    }
+    .name {
+        font-size: 3rem;
+    }
+    
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 1.5px #FF6077, 0 0 1.25px #FF6077, 0 0 1px #FF6077, 0 0 1.25px #FF6077, 0 0 1.5px #FF6077, 0 0 1.25px #FF6077, 0 0 1px #FF6077;
+        }
+        to {
+            text-shadow: 0 0 1.25px #FF6077, 0 0 1px #FF6077, 0 0 1.25px #FF6077, 0 0 1.5px #FF6077, 0 0 1.25px #FF6077, 0 0 1px #FF6077, 0 0 1.25px #FF6077;
+        }
+    }
+    .catch-phrase {
+        font-size: 2.7rem;
+    }
+    .socials a {
+        font-size: 16px;
+        padding: 4px 8px;
+        margin: 1px 1px;
+    }
+    .socials a:hover {
+        font-size: 18px;
+        padding:  8px 12px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 830px) {
+    .home-section {
+        margin-left: 3.5%;
+        width: 95%;
+    }
+    .greeting {
+        font-size: 1rem;
+    }
+    .name {
+        font-size: 3.6rem;
+    }
+    
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 1.5px #FF6077, 0 0 1.25px #FF6077, 0 0 1px #FF6077, 0 0 1.25px #FF6077, 0 0 1.5px #FF6077, 0 0 1.25px #FF6077, 0 0 1px #FF6077;
+        }
+        to {
+            text-shadow: 0 0 1.25px #FF6077, 0 0 1px #FF6077, 0 0 1.25px #FF6077, 0 0 1.5px #FF6077, 0 0 1.25px #FF6077, 0 0 1px #FF6077, 0 0 1.25px #FF6077;
+        }
+    }
+    .catch-phrase {
+        font-size: 3.3rem;
     }
     .socials a {
         font-size: 16px;
