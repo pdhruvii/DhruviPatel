@@ -246,13 +246,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: white; */
+    background-color: white;
     height: 100vh;
     width: 100%;
 }
 
 .about-container {
-    /* background-color: yellow; */
+    background-color: yellow;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -311,64 +311,74 @@ body {
     font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-height: 768px) {
+    .about-section{
+        height: 100vh;
+    }
     .about-container {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        height: 100%;
     }
     .headshot img {
-        margin-right: 0;
-        margin-bottom: 20px;
+        width: 15rem;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 5px;
     }
-    /* .about-textbox {
-        max-width: 100%;
-        text-align: center;
-    } */
-
+    .about-textbox {
+        background-color: green;
+        max-width: 99%; 
+        /* text-align: center; */
+    }
     .about-textbox-header {
         background-color: blue;
-        font-size: 3rem;
-        line-height: 1.2;
+        font-size: 2.3rem;
+        /* text-align: center; */
     }
-    
     .about-tag {
         background-color: orange;
-        font-size: 2rem;
-        line-height: 1.1;
+        color: var(--accent-colour5);
+        font-size: 1.7rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
-    
     .about-textbox-text {
-        background-color: pink
-        /* font-size: 1.2rem;
-        line-height: 1.5; */
+        background-color: pink;
+        color: var(--accent-colour4);
+        font-size: 1rem;
+    }
+    .darker1:hover{
+        font-size: 1.4rem;
     }
 }
+    
 
-@media (min-width: 769px) and (max-width: 830px) {
+/* @media (min-width: 769px) and (max-width: 830px) {
     .about-textbox-header {
         font-size: 2.7rem;
         line-height: 1.2;
     }
-}
+} */
 
-@media (min-width: 769px) and (max-width: 830px) {
-    .about-textbox-header {
-        font-size: 2.7rem;
-        line-height: 1.2;
-    }
-}
 
-.contact-section {
+
+
+
+
+
+
+
+/* .contact-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh; 
-    /* background-color: yellow; */
 }
 
 .contact-textbox-header {
-    /* background-color: #c3073f; */
     font-size: 4.5rem;
     margin-bottom: 0;
 }
@@ -378,13 +388,11 @@ body {
 }
 
 .contact-textbox-links {
-    /* background-color: green; */
     color: var(--accent-colour4);
     font-size: 1.2rem;
 }
 
 .darker2 a {
-    /*text-decoration: none;*/ /*removes underline*/
     color: var(--accent-colour4);
 }
 
@@ -392,4 +400,4 @@ body {
     color: var(--accent-colour1);
     transition: 0.45s ease;
     font-size: 1.5rem;
-}
+} */
