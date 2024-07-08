@@ -260,85 +260,34 @@ body {
 .about-textbox-text{
     background-color: red;
 } */
-.about-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-}
 
-.about-content-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap-reverse; /* To stack elements on small screens */
+/* About Section Styles */
+.about-section {
+    background-color: white;
 }
 
 .headshot img {
-    width: 325px;
-    height: 325px;
+    width: 22rem;
+    height: 22rem;
     border-radius: 2%;
     border: 1.75px solid var(--accent-colour1);
     box-shadow: 0 0 0.8rem var(--accent-colour1);
-    margin-top: 39.5px;
-    margin-left: 150px;
 }
 
-.headshot img:hover {
-    width: 350px;
-    height: 350px;
-    border-radius: 2%;
-    box-shadow: 0 0 0.8rem var(--accent-colour1);
-    margin-top: 39.5px;
-    transition: 0.45s ease;
-}
 
 .about-textbox {
-    width: 60%;
-    max-width: 1000px; 
-    padding: 0 20px;
-    /*background-color: blue;*/
+    background-color: yellow;
+    /* padding: 20px; */
 }
 
 .about-textbox-header {
-    text-align: left;
-    /*background-color: white;*/
-    font-size: 3.8rem;
-}
-
-.about-textbox-header h1{
-    /*background-color: teal;*/
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.about-textbox-header .glow {
-    animation: glow 3s ease-in-out infinite alternate;
+    background-color: blue;
 }
 
 .about-tag {
-    color: var(--accent-colour5);
-    font-size: 3.5rem;
+    background-color: green;
 }
 
-.about-tag h6 {
-    /*background-color: green;*/
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.about-textbox-text p {
-    font-size: 1.25rem;
-    color: var(--accent-colour4);
-    text-align: left;
-    /*background-color: yellow;*/
-    margin-top: 10px;
-    margin-bottom: 10px;;
-}
-
-.darker1:hover{
-    color: var(--accent-colour1);
-    transition: 0.45s ease;
-    font-size: 1.5rem;
+.about-textbox-text {
+    background-color: red;
 }
