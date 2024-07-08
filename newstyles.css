@@ -311,7 +311,45 @@ body {
     font-size: 1.5rem;
 }
 
-@media (max-height: 768px) {
+@media (max-width: 400px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .headshot img {
+        width: 13.4rem;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 4px;
+    }
+    .about-textbox {
+        /* background-color: green; */
+        max-width: 99%; 
+    }
+    .about-textbox-header {
+        /* background-color: blue; */
+        font-size: 2.3rem;
+    }
+    .about-tag {
+        /* background-color: orange; */
+        color: var(--accent-colour5);
+        font-size: 1.7rem;
+        margin-top: 0px;
+        margin-bottom: 12px;
+    }
+    .about-textbox-text {
+        /* background-color: pink; */
+        color: var(--accent-colour4);
+        font-size: 1.1rem;
+    }
+    .darker1:hover{
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
     .about-section{
         height: 100vh;
     }
@@ -325,42 +363,36 @@ body {
         width: 15rem;
         margin-top: 0px;
         margin-right: 0px;
-        margin-left: 5px;
+        margin-left: 4px;
     }
     .about-textbox {
-        background-color: green;
+        /* background-color: green; */
         max-width: 99%; 
-        /* text-align: center; */
     }
     .about-textbox-header {
-        background-color: blue;
-        font-size: 2.3rem;
-        /* text-align: center; */
+        /* background-color: blue; */
+        font-size: 2.8rem;
     }
     .about-tag {
-        background-color: orange;
+        /* background-color: orange; */
         color: var(--accent-colour5);
-        font-size: 1.7rem;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        font-size: 2.1rem;
+        margin-top: 0px;
+        margin-bottom: 15px;
     }
     .about-textbox-text {
-        background-color: pink;
-        color: var(--accent-colour4);
-        font-size: 1rem;
+        /* background-color: pink; */
+        font-size: 1.1rem;
     }
     .darker1:hover{
         font-size: 1.4rem;
     }
 }
-    
 
-/* @media (min-width: 769px) and (max-width: 830px) {
-    .about-textbox-header {
-        font-size: 2.7rem;
-        line-height: 1.2;
-    }
-} */
+
+
+
+
 
 
 
