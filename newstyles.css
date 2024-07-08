@@ -241,53 +241,123 @@ body {
     }
 }
 
-/* .about-section {
-    background: white;
-}
 
-.about-textbox {
-    background-color: yellow;
-}
-
-.about-textbox-header {
-    background-color: blue;
-}
-
-.about-tag {
-    background-color: green;
-}
-
-.about-textbox-text{
-    background-color: red;
-} */
-
-/* About Section Styles */
 .about-section {
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    height: 100vh;
+    /* color: white; */
+    width: 100%;
+}
+
+.about-container {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 100% 20px; */
+    /* max-width: 90%; */
 }
 
 .headshot img {
     width: 22rem;
-    height: 22rem;
+    height: auto;
+    /* for circle:  */
+    /* border-radius: 50%; */
     border-radius: 2%;
+    /* Space between image and text box */
+    margin-right: 30px; 
+    /* margin-right: 2rem; */
+    margin-top: 45px;
     border: 1.75px solid var(--accent-colour1);
     box-shadow: 0 0 0.8rem var(--accent-colour1);
 }
 
-
 .about-textbox {
-    background-color: yellow;
-    /* padding: 20px; */
+    /* background-color: green; */
+    max-width: 60%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-textbox-header {
-    background-color: blue;
+    /* background-color: blue; */
+    font-size: 4.5rem;
+    margin-bottom: 0;
+}
+
+.about-textbox-header .glow {
+    animation: glow 3s ease-in-out infinite alternate;
 }
 
 .about-tag {
-    background-color: green;
+    /* background-color: orange; */
+    color: var(--accent-colour5);
+    font-size: 3.7rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .about-textbox-text {
-    background-color: red;
+    /* background-color: pink; */
+    color: var(--accent-colour4);
+    font-size: 1.2rem;
+    /* line-height: 1.5;  */
+}
+
+.darker1:hover{
+    color: var(--accent-colour1);
+    transition: 0.45s ease;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .headshot img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    /* .about-textbox {
+        max-width: 100%;
+        text-align: center;
+    } */
+
+    .about-textbox-header {
+        background-color: blue;
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    
+    .about-tag {
+        background-color: orange;
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+    
+    .about-textbox-text {
+        background-color: pink
+        /* font-size: 1.2rem;
+        line-height: 1.5; */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 830px) {
+    .about-textbox-header {
+        font-size: 2.7rem;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 830px) {
+    .about-textbox-header {
+        font-size: 2.7rem;
+        line-height: 1.2;
+    }
 }
