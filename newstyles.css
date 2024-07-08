@@ -246,13 +246,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    /* background-color: white; */
     height: 100vh;
     width: 100%;
 }
 
 .about-container {
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -322,30 +322,30 @@ body {
         width: 13.4rem;
         margin-top: 0px;
         margin-right: 0px;
-        margin-left: 4px;
+        margin-left: 0px;
     }
     .about-textbox {
         /* background-color: green; */
-        max-width: 99%; 
+        max-width: 90%; 
     }
     .about-textbox-header {
         /* background-color: blue; */
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     .about-tag {
         /* background-color: orange; */
         color: var(--accent-colour5);
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin-top: 0px;
         margin-bottom: 12px;
     }
     .about-textbox-text {
         /* background-color: pink; */
         color: var(--accent-colour4);
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .darker1:hover{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 
