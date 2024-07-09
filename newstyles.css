@@ -246,7 +246,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: white; */
+    background-color: white;
     height: 100vh;
     width: 100%;
 }
@@ -268,7 +268,7 @@ body {
     /* Space between image and text box */
     margin-right: 30px; 
     /* margin-right: 2rem; */
-    margin-top: 45px;
+    margin-top: 11%;
     border: 1.75px solid var(--accent-colour1);
     box-shadow: 0 0 0.8rem var(--accent-colour1);
 }
@@ -295,20 +295,20 @@ body {
     /* background-color: orange; */
     color: var(--accent-colour5);
     font-size: 3.7rem;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: -10px;
+    margin-bottom: 12px;
 }
 
 .about-textbox-text {
     /* background-color: pink; */
     color: var(--accent-colour4);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .darker1:hover{
     color: var(--accent-colour1);
     transition: 0.45s ease;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 @media (max-width: 800px) {
@@ -348,12 +348,10 @@ body {
     }
 }
 
-@media (min-width: 801px) and (max-width: 1100px){
+@media (min-width: 801px) and (max-width: 1193px){
     .headshot img {
         width: 20rem;
         margin-top: 8%;
-        /* margin-left: 2%; */
-        /* margin-right: 2%; */
     }
     .about-textbox {
         max-width: 50%; 
