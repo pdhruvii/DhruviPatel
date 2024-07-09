@@ -275,7 +275,7 @@ body {
 
 .about-textbox {
     /* background-color: green; */
-    max-width: 60%; 
+    max-width: 65%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -348,7 +348,35 @@ body {
     }
 }
 
+@media (min-width: 801px) and (max-width: 1100px){
+    .headshot img {
+        width: 20rem;
+        margin-top: 8%;
+        /* margin-left: 2%; */
+        /* margin-right: 2%; */
+    }
+    .about-textbox {
+        max-width: 50%; 
+    }
+    .about-textbox-header {
+        /* background-color: blue; */
+        font-size: 2.9rem;
+    }
+    .about-tag {
+        /* background-color: orange; */
+        font-size: 2.1rem;
+        margin-top: 0px;
+        margin-bottom: 12px;
+    }
+    .about-textbox-text {
+        /* background-color: pink; */
+        font-size: 1rem;
+    }
+    .darker1:hover{
+        font-size: 1.4rem;
+    }
 
+}
 
 
 
