@@ -311,7 +311,7 @@ body {
     font-size: 1.5rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
     .about-container {
         flex-direction: column;
         align-items: center;
@@ -320,9 +320,10 @@ body {
     }
     .headshot img {
         width: 13.4rem;
-        margin-top: 0px;
+        /* margin-top: 0px;
         margin-right: 0px;
-        margin-left: 0px;
+        margin-left: 0px; */
+        margin: 0;
     }
     .about-textbox {
         /* background-color: green; */
@@ -334,60 +335,19 @@ body {
     }
     .about-tag {
         /* background-color: orange; */
-        color: var(--accent-colour5);
         font-size: 1.5rem;
         margin-top: 0px;
         margin-bottom: 12px;
     }
     .about-textbox-text {
         /* background-color: pink; */
-        color: var(--accent-colour4);
         font-size: 1rem;
-    }
-    .darker1:hover{
-        font-size: 1.3rem;
-    }
-}
-
-@media (min-width: 401px) and (max-width: 800px) {
-    .about-section{
-        height: 100vh;
-    }
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-    .headshot img {
-        width: 15rem;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-left: 4px;
-    }
-    .about-textbox {
-        /* background-color: green; */
-        max-width: 99%; 
-    }
-    .about-textbox-header {
-        /* background-color: blue; */
-        font-size: 2.8rem;
-    }
-    .about-tag {
-        /* background-color: orange; */
-        color: var(--accent-colour5);
-        font-size: 2.1rem;
-        margin-top: 0px;
-        margin-bottom: 15px;
-    }
-    .about-textbox-text {
-        /* background-color: pink; */
-        font-size: 1.1rem;
     }
     .darker1:hover{
         font-size: 1.4rem;
     }
 }
+
 
 
 
