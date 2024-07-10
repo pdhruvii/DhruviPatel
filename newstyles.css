@@ -447,22 +447,83 @@ body {
 }
 
 
+
+
+
+
+
 .work-section {
-    /* background-color: white; */
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    height: 100vh;
-    width: 100%;
+    padding: 60px 0;
+    background: #fff;
 }
 
-.work-textbox-header {
-    font-size: 4.5rem;
-    line-height: 1;
-    margin-bottom: 0;
+.work-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.work-textbox-header .glow h1 {
+    font-size: 2.5em;
+    color: #333;
     text-align: center;
 }
 
-.work-textbox-header .glow {
-    animation: glow 3s ease-in-out infinite alternate;
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #FF9F55;
+    margin-bottom: 10px;
+}
+
+.timeline-content .job-title {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.timeline-content .company {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #777;
+}
+
+.timeline-content .skills,
+.timeline-content .description {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .timeline {
+        gap: 15px;
+    }
+
+    .timeline-item {
+        padding: 15px;
+    }
+
+    .timeline-content .job-title {
+        font-size: 1.1em;
+    }
+
+    .timeline-content .company {
+        font-size: 1em;
+    }
 }
