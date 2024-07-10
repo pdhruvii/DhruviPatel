@@ -447,26 +447,38 @@ body {
 }
 
 
-
-
-
-
+/* .work-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+} */
 
 .work-section {
-    padding: 60px 0;
+    /* padding: 60px 0; */
     background: #fff;
 }
 
 .work-container {
+    background: red;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.work-textbox-header .glow h1 {
-    font-size: 2.5em;
-    color: #333;
+.work-textbox-header {
+    background-color: yellow;
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 0;
     text-align: center;
+}
+
+.work-textbox-header .glow {
+    animation: glow 3s ease-in-out infinite alternate;
 }
 
 .timeline {
@@ -527,3 +539,8 @@ body {
         font-size: 1em;
     }
 }
+
+
+
+
+
