@@ -504,9 +504,9 @@ body {
 
 .timeline-content .date {
     font-weight:100;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-style: italic;
-    color: #c88089;
+    color: #555;
     /* margin-bottom: 10px; */
 }
 
@@ -522,11 +522,36 @@ body {
     color: var(--accent-colour1);
 }
 
-.timeline-content .skills,
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.skill {
+    background-color: black;
+    color: var(--accent-colour5);
+    border: 1.75px solid var(--accent-colour5);
+    padding: 5px 10px;
+    transition: background-color 4.5.3s, color 0.3s;
+    border-radius: 5px;
+    font-size: 0.9em;
+    box-shadow: 0 0 0.3rem var(--accent-colour5);
+}
+
+.skill:hover {
+    background-color: var(--accent-colour2);
+    border: 1.75px solid var(--accent-colour2);
+    color: white;
+    transition: 0.45s ease;
+}
+
 .timeline-content .description {
     margin: 10px 0;
     color: var(--accent-colour4);
 }
+
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
@@ -544,6 +569,14 @@ body {
 
     .timeline-content .company {
         font-size: 1em;
+    }
+    .skills {
+        gap: 8px;
+    }
+
+    .skill {
+        font-size: 0.8em;
+        padding: 4px 8px;
     }
 }
 
