@@ -458,19 +458,19 @@ body {
 } */
 
 .work-section {
-    /* padding: 60px 0; */
-    background: #fff;
+    padding: 60px 0;
+    /* background: #fff; */
 }
 
 .work-container {
-    background: red;
+    /* background: red; */
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .work-textbox-header {
-    background-color: yellow;
+    /* background-color: yellow; */
     font-size: 4.5rem;
     line-height: 1;
     margin-bottom: 0;
@@ -491,34 +491,41 @@ body {
 .timeline-item {
     display: flex;
     flex-direction: column;
-    background: #fff;
+    background: black;
     padding: 20px;
+    /* border-radius: 8px;
+    box-shadow: 0 4px 8px var(--accent-colour1); */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1.75px solid var(--accent-colour1);
+    box-shadow: 0 0 0.6rem var(--accent-colour1);
+    
 }
 
-.timeline-date {
-    font-weight: bold;
-    color: #FF9F55;
-    margin-bottom: 10px;
+.timeline-content .date {
+    font-weight:100;
+    font-size: 0.8em;
+    font-style: italic;
+    color: #c88089;
+    /* margin-bottom: 10px; */
 }
 
 .timeline-content .job-title {
     margin: 0;
     font-size: 1.2em;
-    color: #333;
+    color: var(--accent-colour5);
 }
 
 .timeline-content .company {
     margin: 5px 0;
     font-size: 1.1em;
-    color: #777;
+    color: var(--accent-colour1);
 }
 
 .timeline-content .skills,
 .timeline-content .description {
     margin: 10px 0;
-    color: #555;
+    color: var(--accent-colour4);
 }
 
 /* Responsive design */
