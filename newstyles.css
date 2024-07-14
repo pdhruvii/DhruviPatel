@@ -418,7 +418,7 @@ body {
 
 .contact-textbox {
     /* background-color: green; */
-    max-width: 1200px;
+    width: 100%;
     text-align: center;
 }
 
@@ -426,7 +426,7 @@ body {
     /* background-color: red; */
     font-size: 4.5rem;
     line-height: 1;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .contact-textbox-header .glow {
@@ -437,6 +437,9 @@ body {
     /* background-color: yellow; */
     color: var(--accent-colour4);
     font-size: 1.2em;
+    width: 80%;
+    margin-left: 10%;
+    /* line-height: 1.3; */
 }
 
 .darker2 a {
