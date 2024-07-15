@@ -760,6 +760,40 @@ body {
 }
 
 
+
+
+
+
+
+.timeline-item:hover {
+    background-color: var(--accent-colour2); /* Example: background turns to accent color */
+    color: white; /* Example: text color turns to white */
+}
+
+
+
+.timeline-item .job-title,
+.timeline-item .company,
+.timeline-item .date,
+.timeline-item .description {
+    transition: color 0.3s ease; 
+}
+
+.timeline-item:hover .job-title,
+.timeline-item:hover .company,
+.timeline-item:hover .date,
+.timeline-item:hover .description {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
 @media (max-width: 400px) {
     .projects-textbox-header {
         font-size: 1.9rem;
