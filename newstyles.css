@@ -570,7 +570,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95vh; 
+    height: 93vh; 
 }
 
 .contact-textbox {
@@ -644,9 +644,8 @@ body {
     }
 }
 
-
 .footer {
-    height: 5vh;
+    height: 7vh;
     text-align: center;
     align-items: center;
     justify-content: center;
