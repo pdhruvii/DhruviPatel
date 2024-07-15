@@ -664,7 +664,7 @@ body {
 }
 
 .projects-container {
-    background-color: yellow;
+    /* background-color: yellow; */
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -674,7 +674,7 @@ body {
 }
 
 .projects-textbox {
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     text-align: center;
     margin-bottom: 40px;
@@ -705,7 +705,7 @@ body {
     border-radius: 8px;
     border: 1.75px solid var(--accent-colour1);
     box-shadow: 0 0 0.6rem var(--accent-colour1);
-    /* margin-bottom: 30px; */
+    margin-bottom: 20px;
 }
 
 .project-title {
@@ -714,39 +714,71 @@ body {
     color: var(--accent-colour5);
 }
 
-.project-role {
+.project-github {
     margin: 5px 0;
     font-size: 1.1em;
     color: var(--accent-colour1);
 }
 
-.project-date {
+.project-github a {
+    font-size: 30px;
+    color: var(--accent-colour1);
+}
+
+.project-github a:hover {
+    color: var(--accent-colour5);
+    transition: 0.45s ease;
+}
+
+/* .project-date {
     font-weight:100;
     font-size: 0.9em;
     font-style: italic;
     color: #555;
-}
-
-.project-description {
-    list-style-type: disc;
-    color: #bbb;
-    margin-top: 10px;
-}
+} */
 
 .project-item .project-description {
     /* background-color: aqua; */
-    margin-top: 18px;
+    /* margin-top: 18px; */
     color: var(--accent-colour4);
 }
 
-.project-description {
-    list-style-type: disc; /* You can use circle, square, etc. */
-    padding-left: 20px; /* Adjust padding for proper indentation */
+/* .project-description {
+    list-style-type: disc; 
+    padding-left: 20px; 
+} */
+
+
+@media (max-width: 400px) {
+    .projects-textbox-header {
+        font-size: 1.9rem;
+    }
 }
+
+@media (min-width: 401px) and (max-width: 500px) {
+    .projects-textbox-header {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .projects-textbox-header {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 830px) {
+    .projects-textbox-header {
+        font-size: 3.6rem;
+    }
+}
+
+
 
 @media (max-width: 900px) {
     .project-item {
-        width: 45%; /* Two items per row on smaller screens */
+        width: 47%; /* Two items per row on smaller screens */
+        margin-bottom: 15px;
     }
 }
 
