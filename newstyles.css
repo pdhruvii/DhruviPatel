@@ -725,11 +725,6 @@ body {
     color: var(--accent-colour1);
 }
 
-.project-github a:hover {
-    color: var(--accent-colour5);
-    transition: 0.45s ease;
-}
-
 /* .project-date {
     font-weight:100;
     font-size: 0.9em;
@@ -743,10 +738,28 @@ body {
     color: var(--accent-colour4);
 }
 
-/* .project-description {
-    list-style-type: disc; 
-    padding-left: 20px; 
-} */
+.project-item:hover {
+    background-color: var(--accent-colour2); /* Example: background turns to accent color */
+    color: white; /* Example: text color turns to white */
+}
+
+.project-item:hover .bx.bxl-github:hover {
+    color: black;
+}
+
+.project-item .project-title,
+.project-item .project-github i,
+.project-item .project-description {
+    transition: color 0.3s ease; 
+}
+
+.project-item:hover .project-title,
+.project-item:hover .project-github i,
+.project-item:hover .project-description {
+    color: white; 
+}
+
+
 
 
 @media (max-width: 400px) {
