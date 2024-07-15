@@ -565,12 +565,12 @@ body {
 }
 
 .contact-section {
-    /* background-color: white; */
+    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 95vh; 
 }
 
 .contact-textbox {
@@ -645,5 +645,16 @@ body {
 }
 
 
-
-
+.footer {
+    height: 5vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* padding: 3vh 0; */
+    /* background-color: #f8f8f8; */
+    color: var(--accent-colour4);
+    /* position: relative; */
+    /* bottom: 0; */
+    width: 100%;
+  }
+  
