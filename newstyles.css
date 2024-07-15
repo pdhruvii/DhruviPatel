@@ -498,9 +498,18 @@ body {
 
 .timeline-content .description {
     /* background-color: aqua; */
-    margin: 10px 0;
+    margin-top: 18px;
     color: var(--accent-colour4);
 }
+
+.description {
+    list-style-type: disc; /* You can use circle, square, etc. */
+    padding-left: 20px; /* Adjust padding for proper indentation */
+}
+
+/* .description li {
+    margin-bottom: 3px; 
+} */
 
 @media (max-width: 400px) {
     .work-textbox-header {
