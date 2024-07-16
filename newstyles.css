@@ -497,7 +497,6 @@ body {
 .timeline-item .job-title,
 .timeline-item .company,
 .timeline-item .date,
-.timeline-item .skill,
 .timeline-item .description {
     transition: color 0.3s ease; 
 }
@@ -505,17 +504,18 @@ body {
 .timeline-item:hover .job-title,
 .timeline-item:hover .company,
 .timeline-item:hover .date,
-.timeline-item:hover .skill,
 .timeline-item:hover .description {
     color: white;
 }
 
 
-.timeline-item:hover .skill {
+.timeline-item:hover .skill,
+.project-item:hover .skill {
+    transition: color 0.3s ease;
+    color: white;
     background-color: var(--accent-colour2);
     border: 1.75px solid white;
     padding: 5px 10px;
-    transition: background-color 4.5.3s, color 0.3s;
     border-radius: 5px;
     font-size: 0.9em;
     box-shadow: 0 0 0.3rem white;
