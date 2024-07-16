@@ -489,12 +489,38 @@ body {
     box-shadow: 0 0 0.3rem var(--accent-colour5);
 }
 
-.skill:hover {
-    background-color: var(--accent-colour2);
-    border: 1.75px solid var(--accent-colour2);
-    color: white;
-    transition: 0.45s ease;
+.timeline-item:hover {
+    background-color: var(--accent-colour2); /* Example: background turns to accent color */
+    color: white; /* Example: text color turns to white */
 }
+
+.timeline-item .job-title,
+.timeline-item .company,
+.timeline-item .date,
+.timeline-item .skill,
+.timeline-item .description {
+    transition: color 0.3s ease; 
+}
+
+.timeline-item:hover .job-title,
+.timeline-item:hover .company,
+.timeline-item:hover .date,
+.timeline-item:hover .skill,
+.timeline-item:hover .description {
+    color: white;
+}
+
+
+.timeline-item:hover .skill {
+    background-color: var(--accent-colour2);
+    border: 1.75px solid white;
+    padding: 5px 10px;
+    transition: background-color 4.5.3s, color 0.3s;
+    border-radius: 5px;
+    font-size: 0.9em;
+    box-shadow: 0 0 0.3rem white;
+}
+
 
 .timeline-content .description {
     /* background-color: aqua; */
@@ -503,13 +529,9 @@ body {
 }
 
 .description {
-    list-style-type: disc; /* You can use circle, square, etc. */
-    padding-left: 20px; /* Adjust padding for proper indentation */
+    list-style-type: disc;
+    padding-left: 20px;
 }
-
-/* .description li {
-    margin-bottom: 3px; 
-} */
 
 @media (max-width: 400px) {
     .work-textbox-header {
@@ -757,33 +779,6 @@ body {
 .project-item:hover .project-github i,
 .project-item:hover .project-description {
     color: white; 
-}
-
-
-
-
-
-
-
-.timeline-item:hover {
-    background-color: var(--accent-colour2); /* Example: background turns to accent color */
-    color: white; /* Example: text color turns to white */
-}
-
-
-
-.timeline-item .job-title,
-.timeline-item .company,
-.timeline-item .date,
-.timeline-item .description {
-    transition: color 0.3s ease; 
-}
-
-.timeline-item:hover .job-title,
-.timeline-item:hover .company,
-.timeline-item:hover .date,
-.timeline-item:hover .description {
-    color: white;
 }
 
 
