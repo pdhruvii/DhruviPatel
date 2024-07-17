@@ -784,6 +784,16 @@ body {
 
 
 
+.extracurriculars-textbox-header {
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.extracurriculars-textbox-header .glow {
+    animation: glow 3s ease-in-out infinite alternate;
+}
 
 
 
@@ -793,26 +803,31 @@ body {
     .projects-textbox-header {
         font-size: 1.9rem;
     }
+    .extracurriculars-textbox-header {
+        font-size: 1.8rem;
+    }
 }
 
 @media (min-width: 401px) and (max-width: 500px) {
-    .projects-textbox-header {
+    .projects-textbox-header,
+    .extracurriculars-textbox-header {
         font-size: 2.4rem;
     }
 }
 
 @media (min-width: 501px) and (max-width: 600px) {
-    .projects-textbox-header {
+    .projects-textbox-header,
+    .extracurriculars-textbox-header {
         font-size: 3rem;
     }
 }
 
 @media (min-width: 601px) and (max-width: 830px) {
-    .projects-textbox-header {
+    .projects-textbox-header,
+    .extracurriculars-textbox-header {
         font-size: 3.6rem;
     }
 }
-
 
 
 @media (max-width: 900px) {
