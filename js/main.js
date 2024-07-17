@@ -1,32 +1,11 @@
-/*===========Sections Active Link===========*/
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            })
-        }
-
-    });
-}
-
 /*===========Typed.js Automated Text Home Catch Phrase===========*/
 document.addEventListener('DOMContentLoaded', function () {
     const typed = new Typed('.automated-text', {
         strings: [
             '<span style="color: #c3073f;">ideas into reality.</span>',
         ],
-        typeSpeed: 75,
-        backSpeed: 75,
+        typeSpeed: 80,
+        backSpeed: 90,
         backDelay: 500,
         loop: true,
         smartBackspace: true,
@@ -34,33 +13,49 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/*===========Typed.js Automated Text for About Me Tag===========*/
-document.addEventListener('DOMContentLoaded', function () {
-    const typed = new Typed('.about-automated-text', {
-        strings: [
-            '<span style="color: #c3073f;">New Grad Roles for 2024!</span>',
-        ],
-        typeSpeed: 75,
-        backSpeed: 75,
-        backDelay: 500,
-        loop: true,
-        smartBackspace: true,
-        cursorChar: '<span style="color: #c3073f;">|</span>',
+/*===========Cycling Pink Colours About Me Technology===========*/
+document.addEventListener("DOMContentLoaded", function() {
+    const techElements = document.querySelectorAll('.technologies');
+    techElements.forEach(element => {
+        element.classList.add('cycle-colors');
     });
 });
 
-/*
-function openResume() {
-    const pdfPath = './Dhruvi_Patel_Resume.pdf';
-
-    window.open(pdfPath, '_blank');
+/*===========Navigation Bar===========*/
+function toggleMenu() {
+    var menu = document.getElementById('nav-menu');
+    menu.classList.toggle('show');
 }
-*/
 
+document.addEventListener('DOMContentLoaded', function() {
+    var sections = document.querySelectorAll('section');
+    var navLinks = document.querySelectorAll('nav ul li a');
 
+    //Handle click event on nav links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+            var menu = document.getElementById('nav-menu');
+            //Hide menu after click (for mobile view)
+            menu.classList.remove('show'); 
+        });
+    });
 
-// Get the current window width
-var windowWidth = window.innerWidth;
+    //Handle scroll event to update active link
+    document.addEventListener('scroll', function() {
+        sections.forEach(section => {
+            var position = section.getBoundingClientRect();
+            var id = section.getAttribute('id');
 
-// Log the window width to the console
-console.log("Window width: " + windowWidth + " pixels");
+            if (position.top <= 0 && position.bottom > 0) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === id) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    });
+});
