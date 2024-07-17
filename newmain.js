@@ -27,3 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
 //         cursorChar: '<span style="color: #c3073f;">|</span>',
 //     });
 // });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const techElements = document.querySelectorAll('.technologies');
+    techElements.forEach(element => {
+        element.classList.add('cycle-colors');
+    });
+});

@@ -334,6 +334,19 @@ body {
     font-size: 1.4rem;
 }
 
+
+
+@keyframes pinkCycle {
+    0%, 100% { color: var(--accent-colour1); } 
+    33% { color: var(--accent-colour2); }
+    66% { color: var(--accent-colour3); }
+}
+
+.cycle-colors {
+    animation: pinkCycle 4s infinite linear;
+}
+
+
 @media (max-width: 800px) {
     .about-container {
         flex-direction: column;
