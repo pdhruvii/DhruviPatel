@@ -154,8 +154,7 @@ nav ul li a:hover {
 }
 
 .home-section {
-    /* background-color: white; */
-    padding-top: 60px;
+    padding-top: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,19 +164,16 @@ nav ul li a:hover {
 }
 
 .greeting {
-    /* background-color: yellow; */
     color: var(--accent-colour1);
     font-size: 1.2rem;
-    /* font-weight:100; */
     line-height: 1;
     margin-bottom: 20px;
     
 }
 .name {
-    /* background-color: green; */
     font-size: 4.5rem;
     line-height: 1;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
 }
 
 .name .glow {
@@ -194,7 +190,6 @@ nav ul li a:hover {
 }
 
 .catch-phrase {
-    /* background-color: orange; */
     color: var(--accent-colour5);
     font-size: 4.2rem;
     line-height: 1.1;
@@ -208,7 +203,6 @@ nav ul li a:hover {
 
 .socials a {
     padding:  6px 10px;
-    /*background-color: transparent;*/
     color: var(--accent-colour1);
     border: 1.75px solid var(--accent-colour1);
     border-radius: 5px;
@@ -352,7 +346,6 @@ nav ul li a:hover {
 }
 
 .about-textbox {
-    /* background-color: green; */
     max-width: 65%; 
     display: flex;
     flex-direction: column;
@@ -360,7 +353,6 @@ nav ul li a:hover {
 }
 
 .about-textbox-header {
-    /* background-color: blue; */
     font-size: 4.5rem;
     margin-bottom: 0;
 }
@@ -370,7 +362,6 @@ nav ul li a:hover {
 }
 
 .about-tag {
-    /* background-color: orange; */
     color: var(--accent-colour5);
     font-size: 3.7rem;
     margin-top: -10px;
@@ -382,7 +373,6 @@ nav ul li a:hover {
 }
 
 .about-textbox-text {
-    /* background-color: pink; */
     color: var(--accent-colour4);
     font-size: 1.1rem;
 }
@@ -392,8 +382,6 @@ nav ul li a:hover {
     transition: 0.45s ease;
     font-size: 1.4rem;
 }
-
-
 
 @keyframes pinkCycle {
     0%, 100% { color: var(--accent-colour1); } 
@@ -420,27 +408,20 @@ nav ul li a:hover {
     }
     .headshot img {
         width: 13.4rem;
-        /* margin-top: 0px;
-        margin-right: 0px;
-        margin-left: 0px; */
         margin: 0;
     }
     .about-textbox {
-        /* background-color: green; */
         max-width: 90%; 
     }
     .about-textbox-header {
-        /* background-color: blue; */
         font-size: 2rem;
     }
     .about-tag {
-        /* background-color: orange; */
         font-size: 1.5rem;
         margin-top: 0px;
         margin-bottom: 12px;
     }
     .about-textbox-text {
-        /* background-color: pink; */
         font-size: 1rem;
     }
     .darker1:hover{
@@ -457,17 +438,14 @@ nav ul li a:hover {
         max-width: 50%; 
     }
     .about-textbox-header {
-        /* background-color: blue; */
         font-size: 2.9rem;
     }
     .about-tag {
-        /* background-color: orange; */
         font-size: 2.1rem;
         margin-top: 0px;
         margin-bottom: 12px;
     }
     .about-textbox-text {
-        /* background-color: pink; */
         font-size: 1rem;
     }
     .darker1:hover{
@@ -476,31 +454,17 @@ nav ul li a:hover {
 
 }
 
-
-/* .work-section {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-} */
-
 .work-section {
     padding: 80px 0;
-    /* background: #fff; */
 }
 
 .work-container {
-    /* background: red; */
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .work-textbox-header {
-    /* background-color: yellow; */
     font-size: 4.5rem;
     line-height: 1;
     margin-bottom: 0;
@@ -523,13 +487,9 @@ nav ul li a:hover {
     flex-direction: column;
     background: black;
     padding: 20px;
-    /* border-radius: 8px;
-    box-shadow: 0 4px 8px var(--accent-colour1); */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
     border: 1.75px solid var(--accent-colour1);
     box-shadow: 0 0 0.6rem var(--accent-colour1);
-    
 }
 
 .timeline-content .date {
@@ -537,7 +497,6 @@ nav ul li a:hover {
     font-size: 0.9em;
     font-style: italic;
     color: #555;
-    /* margin-bottom: 10px; */
 }
 
 .timeline-content .job-title {
@@ -571,8 +530,8 @@ nav ul li a:hover {
 }
 
 .timeline-item:hover {
-    background-color: var(--accent-colour2); /* Example: background turns to accent color */
-    color: white; /* Example: text color turns to white */
+    background-color: var(--accent-colour2); 
+    color: white;
 }
 
 .timeline-item .job-title,
@@ -589,7 +548,6 @@ nav ul li a:hover {
     color: white;
 }
 
-
 .timeline-item:hover .skill,
 .project-item:hover .skill {
     transition: color 0.3s ease;
@@ -602,9 +560,7 @@ nav ul li a:hover {
     box-shadow: 0 0 0.3rem white;
 }
 
-
 .timeline-content .description {
-    /* background-color: aqua; */
     margin-top: 18px;
     color: var(--accent-colour4);
 }
@@ -638,9 +594,6 @@ nav ul li a:hover {
     }
 }
 
-
-
-/* Responsive design */
 @media screen and (max-width: 768px) {
     .timeline {
         gap: 15px;
@@ -668,7 +621,6 @@ nav ul li a:hover {
 }
 
 .contact-section {
-    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -677,13 +629,11 @@ nav ul li a:hover {
 }
 
 .contact-textbox {
-    /* background-color: green; */
     width: 100%;
     text-align: center;
 }
 
 .contact-textbox-header {
-    /* background-color: red; */
     font-size: 4.5rem;
     line-height: 1;
     margin-bottom: 15px;
@@ -694,12 +644,10 @@ nav ul li a:hover {
 }
 
 .contact-textbox-links {
-    /* background-color: yellow; */
     color: var(--accent-colour4);
     font-size: 1.2em;
     width: 80%;
     margin-left: 10%;
-    /* line-height: 1.3; */
 }
 
 .darker2 a {
@@ -740,7 +688,6 @@ nav ul li a:hover {
 @media screen and (max-width: 768px) {
     .contact-textbox-links {
         font-size: 1em;
-        /* line-height: 1.3; */
     }
     .darker2 a:hover{
         font-size: 1.4em;
@@ -752,22 +699,15 @@ nav ul li a:hover {
     text-align: center;
     align-items: center;
     justify-content: center;
-    /* padding: 3vh 0; */
-    /* background-color: #f8f8f8; */
     color: var(--accent-colour4);
-    /* position: relative; */
-    /* bottom: 0; */
     width: 100%;
   }
   
-
   .projects-section {
     padding: 80px 0;
-    /* background-color: #fff; */
 }
 
 .projects-container {
-    /* background-color: yellow; */
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -777,7 +717,6 @@ nav ul li a:hover {
 }
 
 .projects-textbox {
-    /* background-color: red; */
     width: 100%;
     text-align: center;
     margin-bottom: 40px;
@@ -791,8 +730,6 @@ nav ul li a:hover {
 }
 
 .projects {
-    /* max-width: 90%; */
-    /* background-color: blue; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -803,7 +740,7 @@ nav ul li a:hover {
 }
 
 .project-item {
-    width: 32%; /* Adjust width to fit three items per row */
+    width: 32%;
     padding: 20px;
     border-radius: 8px;
     border: 1.75px solid var(--accent-colour1);
@@ -828,22 +765,13 @@ nav ul li a:hover {
     color: var(--accent-colour1);
 }
 
-/* .project-date {
-    font-weight:100;
-    font-size: 0.9em;
-    font-style: italic;
-    color: #555;
-} */
-
 .project-item .project-description {
-    /* background-color: aqua; */
-    /* margin-top: 18px; */
     color: var(--accent-colour4);
 }
 
 .project-item:hover {
-    background-color: var(--accent-colour2); /* Example: background turns to accent color */
-    color: white; /* Example: text color turns to white */
+    background-color: var(--accent-colour2); 
+    color: white;
 }
 
 .project-item:hover .bx.bxl-github:hover {
@@ -888,13 +816,13 @@ nav ul li a:hover {
 
 @media (max-width: 900px) {
     .project-item {
-        width: 47%; /* Two items per row on smaller screens */
+        width: 47%;
         margin-bottom: 15px;
     }
 }
 
 @media (max-width: 600px) {
     .project-item {
-        width: 100%; /* One item per row on mobile */
+        width: 100%;
     }
 }

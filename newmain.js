@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
         strings: [
             '<span style="color: #c3073f;">ideas into reality.</span>',
         ],
-        typeSpeed: 75,
-        backSpeed: 85,
+        typeSpeed: 80,
+        backSpeed: 90,
         backDelay: 500,
         loop: true,
         smartBackspace: true,
@@ -13,21 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/*===========Typed.js Automated Text for About Me Tag===========*/
-// document.addEventListener('DOMContentLoaded', function () {
-//     const typed = new Typed('.about-automated-text', {
-//         strings: [
-//             '<span style="color: #c3073f;">New Grad Roles for 2024!</span>',
-//         ],
-//         typeSpeed: 75,
-//         backSpeed: 75,
-//         backDelay: 500,
-//         loop: true,
-//         smartBackspace: true,
-//         cursorChar: '<span style="color: #c3073f;">|</span>',
-//     });
-// });
-
+/*===========Cycling Pink Colours About Me Technology===========*/
 document.addEventListener("DOMContentLoaded", function() {
     const techElements = document.querySelectorAll('.technologies');
     techElements.forEach(element => {
@@ -35,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
+/*===========Navigation Bar===========*/
 function toggleMenu() {
     var menu = document.getElementById('nav-menu');
     menu.classList.toggle('show');
@@ -45,17 +31,18 @@ document.addEventListener('DOMContentLoaded', function() {
     var sections = document.querySelectorAll('section');
     var navLinks = document.querySelectorAll('nav ul li a');
 
-    // Handle click event on nav links
+    //Handle click event on nav links
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             navLinks.forEach(link => link.classList.remove('active'));
             this.classList.add('active');
             var menu = document.getElementById('nav-menu');
-            menu.classList.remove('show'); // Hide menu after click (for mobile view)
+            //Hide menu after click (for mobile view)
+            menu.classList.remove('show'); 
         });
     });
 
-    // Handle scroll event to update active link
+    //Handle scroll event to update active link
     document.addEventListener('scroll', function() {
         sections.forEach(section => {
             var position = section.getBoundingClientRect();
