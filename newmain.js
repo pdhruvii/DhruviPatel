@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
             '<span style="color: #c3073f;">ideas into reality.</span>',
         ],
         typeSpeed: 75,
-        backSpeed: 75,
+        backSpeed: 85,
         backDelay: 500,
         loop: true,
         smartBackspace: true,

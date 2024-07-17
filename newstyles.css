@@ -16,23 +16,12 @@
     --accent-colour5: #cc4d5f;
 }
 body {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items puts it in the middle of the page: ; */
-    /* align-items: center;
-    height: 100vh; Full viewport height */
     background: black;
-    margin: 0; /* Ensure no extra margin around body */
+    margin: 0;
 }
 
-/* .home-section {
-    flex-direction: column;
-    margin-left: 8%;
-    width: 85%;
-} */
-
 ::-webkit-scrollbar {
-    width: 7px; /* Width of the scrollbar */
+    width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -41,12 +30,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--accent-colour1); /* Scrollbar thumb color */
+    background-color: var(--accent-colour1);
     border-radius: 1px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--accent-colour5); /* Thumb color when hovered */
+    background-color: var(--accent-colour5); 
     transition: 0.45s ease;
 }
 
@@ -81,7 +70,7 @@ nav {
     display: none;
     font-size: 2rem;
     cursor: pointer;
-    z-index: 1001; /* Ensure it stays above the menu */
+    z-index: 1001;
 }
 
 nav ul {
@@ -123,7 +112,7 @@ nav ul li a:hover {
         flex-direction: column;
         position: fixed;
         top: 0;
-        right: -100%; /* Start off-screen to the right */
+        right: -100%;
         height: 100%;
         width: 250px;
         background: black;
@@ -135,7 +124,7 @@ nav ul li a:hover {
     }
 
     nav ul.show {
-        right: 0; /* Slide in from right to left */
+        right: 0;
     }
 
     nav ul li {
@@ -157,7 +146,6 @@ nav ul li a:hover {
     transition: background-color 0.3s, color 0.3s;
 }
 
-
 .resume-button:hover {
     background-color: var(--accent-colour2);
     color: white;
@@ -166,26 +154,30 @@ nav ul li a:hover {
 }
 
 .home-section {
+    /* background-color: white; */
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     margin-left: 8%;
-    width: 85%; /* Full viewport width */
+    width: 85%;
 }
 
 .greeting {
+    /* background-color: yellow; */
     color: var(--accent-colour1);
-    font-size: 1.4rem;
-    line-height: 2;
-    margin-bottom: 0;
+    font-size: 1.2rem;
+    /* font-weight:100; */
+    line-height: 1;
+    margin-bottom: 20px;
     
 }
 .name {
+    /* background-color: green; */
     font-size: 4.5rem;
-    line-height: 1.2;
-    margin-bottom: 0;
+    line-height: 1;
+    margin-bottom: 4px;
 }
 
 .name .glow {
@@ -202,20 +194,16 @@ nav ul li a:hover {
 }
 
 .catch-phrase {
+    /* background-color: orange; */
     color: var(--accent-colour5);
     font-size: 4.2rem;
     line-height: 1.1;
-    margin-top: 0;
+    margin-top: 0px;
+    margin-bottom: 25px;
 }
 
 .automated-text {
     caret-color:#c3073f;
-}
-
-.socials {
-    /* margin-top: 5%; */
-    /* background-color: red; */
-    line-height: 4.2;
 }
 
 .socials a {
@@ -313,7 +301,6 @@ nav ul li a:hover {
     }
 }
 
-
 @media (min-width: 601px) and (max-width: 830px) {
     .home-section {
         margin-left: 3.5%;
@@ -339,19 +326,15 @@ nav ul li a:hover {
     }
 }
 
-
 .about-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-top: 60px; */
-    /* background-color: white; */
     height: 100vh;
     width: 100%;
 }
 
 .about-container {
-    /* background-color: yellow; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -361,12 +344,8 @@ nav ul li a:hover {
 .headshot img {
     width: 22rem;
     height: auto;
-    /* for circle:  */
-    /* border-radius: 50%; */
     border-radius: 2%;
-    /* Space between image and text box */
     margin-right: 30px; 
-    /* margin-right: 2rem; */
     margin-top: 11%;
     border: 1.75px solid var(--accent-colour1);
     box-shadow: 0 0 0.8rem var(--accent-colour1);
