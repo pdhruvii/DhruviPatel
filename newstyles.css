@@ -60,7 +60,7 @@ body {
 header {
     background: black;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -75,7 +75,7 @@ nav {
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .logo {
@@ -103,19 +103,27 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    color: var(--accent-colour4);
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem;
     display: block;
 }
 
 nav ul li a.active {
-    color: red;
+    color: var(--accent-colour1);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--accent-colour1);
+    transition: 0.45s ease;
 }
 
 @media (max-width: 1100px) {
     .hamburger {
         display: block;
+        color: #c3073f;
     }
 
     nav ul {
@@ -529,7 +537,7 @@ nav ul li a.active {
 } */
 
 .work-section {
-    padding: 60px 0;
+    padding: 80px 0;
     /* background: #fff; */
 }
 
@@ -803,7 +811,7 @@ nav ul li a.active {
   
 
   .projects-section {
-    padding: 200px 0;
+    padding: 80px 0;
     /* background-color: #fff; */
 }
 
