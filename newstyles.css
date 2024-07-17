@@ -50,13 +50,6 @@ body {
     transition: 0.45s ease;
 }
 
-
-
-
-
-
-
-
 header {
     background: black;
     color: #fff;
@@ -378,6 +371,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding-top: 60px; */
     /* background-color: white; */
     height: 100vh;
     width: 100%;
@@ -459,6 +453,11 @@ nav ul li a:hover {
     animation: pinkCycle 4s infinite linear;
 }
 
+@media (max-width: 400px){
+    .about-section {
+        padding-top: 60px;
+    }
+}
 
 @media (max-width: 800px) {
     .about-container {
