@@ -37,7 +37,7 @@ body {
 
 ::-webkit-scrollbar-track {
     background: transparent; 
-    background: #0f0f0f; 
+    background: #040404; 
 }
 
 ::-webkit-scrollbar-thumb {
@@ -316,6 +316,10 @@ body {
     font-size: 3.7rem;
     margin-top: -10px;
     margin-bottom: 12px;
+}
+
+.about-automated-text {
+    color: var(--accent-colour1);
 }
 
 .about-textbox-text {
