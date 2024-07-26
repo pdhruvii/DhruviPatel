@@ -59,3 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+/*===========Scroll To Top On Refresh===========*/
+document.addEventListener('DOMContentLoaded', function() {
+    window.scrollTo(0, 0);
+});
